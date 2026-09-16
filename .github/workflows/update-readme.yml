@@ -1,23 +1,22 @@
-name: Update README
+name: Update Recent Activity
 
 on:
   schedule:
-    - cron: "*/30 * * * *"
+    - cron: "0 */6 * * *"
   workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
-  build:
-    name: Update README with recent GitHub activity
+  update-readme:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Update recent activity
+      - name: Update recent GitHub activity
         uses: jamesgeorge007/github-activity-readme@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -25,4 +24,4 @@ jobs:
           GH_USERNAME: Aryan-kumar-91
           MAX_LINES: 5
           TARGET_FILE: README.md
-          COMMIT_MSG: "⚡ Update README with recent activity"
+          COMMIT_MSG: "⚡ Update recent GitHub activity"
