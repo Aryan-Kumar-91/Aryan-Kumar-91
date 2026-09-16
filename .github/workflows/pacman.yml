@@ -26,12 +26,12 @@ jobs:
       - name: Generate Pacman contribution graph
         uses: DuyetBKU/viz-pacman-github-profile@main
         with:
-          github_user_name: Aryan-kumar-91
+          github_user_name: ${{ github.repository_owner }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
           theme: react-dark
           music: "false"
 
-      - name: Push generated graph to output branch
+      - name: Push generated files to output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output
