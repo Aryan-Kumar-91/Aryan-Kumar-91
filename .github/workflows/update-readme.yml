@@ -2,7 +2,7 @@ name: Update Recent Activity
 
 on:
   schedule:
-    - cron: "*/30 * * * *"
+    - cron: "0 */6 * * *"
   workflow_dispatch:
 
 permissions:
@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Update recent GitHub activity
@@ -23,4 +23,5 @@ jobs:
         with:
           GH_USERNAME: Aryan-kumar-91
           MAX_LINES: 5
+          TARGET_FILE: README.md
           COMMIT_MSG: "⚡ Update recent GitHub activity"
