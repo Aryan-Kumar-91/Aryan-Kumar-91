@@ -1,0 +1,37 @@
+name: Generate Pacman Contribution Graph
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Increase Node memory
+        run: echo "NODE_OPTIONS=--max-old-space-size=8192" >> $GITHUB_ENV
+
+      - name: Generate Pacman graph
+        uses: DuyetBKU/viz-pacman-github-profile@main
+        with:
+          github_user_name: Aryan-kumar-91
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          theme: react-dark
+          music: "false"
+
+      - name: Push generated graph to output branch
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
