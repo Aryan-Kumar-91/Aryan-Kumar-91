@@ -150,8 +150,6 @@ An end-to-end computer vision system that detects potholes and road cracks from 
 
 ### Contribution Graph 👾
 
-### Contribution Graph 👾
-
 <picture>
   <source
     media="(prefers-color-scheme: dark)"
