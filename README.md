@@ -153,15 +153,15 @@ An end-to-end computer vision system that detects potholes and road cracks from 
 <picture>
   <source
     media="(prefers-color-scheme: dark)"
-    srcset="https://raw.githubusercontent.com/Aryan-kumar-91/Aryan-kumar-91/output/dist/pacman-contribution-graph-dark.svg"
+    srcset="https://raw.githubusercontent.com/Aryan-kumar-91/Aryan-kumar-91/output/pacman-contribution-graph-dark.svg"
   />
   <source
     media="(prefers-color-scheme: light)"
-    srcset="https://raw.githubusercontent.com/Aryan-kumar-91/Aryan-kumar-91/output/dist/pacman-contribution-graph.svg"
+    srcset="https://raw.githubusercontent.com/Aryan-kumar-91/Aryan-kumar-91/output/pacman-contribution-graph.svg"
   />
   <img
-    alt="Pacman Contribution Graph"
-    src="https://raw.githubusercontent.com/Aryan-kumar-91/Aryan-kumar-91/output/dist/pacman-contribution-graph.svg"
+    alt="Pacman contribution graph"
+    src="https://raw.githubusercontent.com/Aryan-kumar-91/Aryan-kumar-91/output/pacman-contribution-graph.svg"
   />
 </picture>
 
