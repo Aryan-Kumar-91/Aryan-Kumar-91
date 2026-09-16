@@ -150,6 +150,8 @@ An end-to-end computer vision system that detects potholes and road cracks from 
 
 ### Contribution Graph 👾
 
+### Contribution Graph 👾
+
 <picture>
   <source
     media="(prefers-color-scheme: dark)"
@@ -160,7 +162,7 @@ An end-to-end computer vision system that detects potholes and road cracks from 
     srcset="https://raw.githubusercontent.com/Aryan-kumar-91/Aryan-kumar-91/output/dist/pacman-contribution-graph-light.svg"
   />
   <img
-    alt="Pacman contribution graph"
+    alt="Pacman Contribution Graph"
     src="https://raw.githubusercontent.com/Aryan-kumar-91/Aryan-kumar-91/output/dist/pacman-contribution-graph-dark.svg"
   />
 </picture>
